@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/1-getting-started/**.js --env allure=true"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.17.0"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2"
   }
 }
