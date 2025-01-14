@@ -1,4 +1,4 @@
-import { DireccionUrl } from "../data/url";
+import { data} from "../data/data";
 
 class BarraMenu {
     getBarraMenu = {
@@ -10,7 +10,7 @@ class BarraMenu {
     }
 
     linknavegacion() {
-        cy.visit(DireccionUrl.getUrl())
+        cy.visit(data.getUrl())
     }
 
     setLogo() {
