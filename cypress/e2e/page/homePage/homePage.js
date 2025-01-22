@@ -1,6 +1,6 @@
 import { barraMenu } from "../barrNemu/barrMenu";
 
-class HomePage {
+ class HomePage {
   
     getTitle = {
 
@@ -32,10 +32,26 @@ class HomePage {
                barraMenu.setLogo();
             }
             
-        }) 
-        
-       
+        })  
     }
+    
+    static productNamesDom(productNames) {
+
+        return cy.contains('.card-title', productNames)
+    }
+    
+    // Metodo para validar los nombre de los productos
+    verifyproduct(productNames) {
+      
+        cy.log(productNames)
+       }
+       
+        // cy.log(productNames)
+        // productNamesDom.verifyproduct(productName).should('be.visible');
+
+
+
+
 }
 
 export const homePage = new HomePage();

@@ -5,7 +5,8 @@
 
    getTestSuit() {
       return {
-         paginaInicio: 'Página de Inicio'
+         paginaInicio: 'Página de Inicio',
+         navegacionProducto: 'Navegar por productos'
       }
    }
    

@@ -17,12 +17,21 @@ describe(data.getTestSuit().paginaInicio, () => {
         homePage.setTitle();
     })
 
-    it.only('Confirmar que los enlaces', () => {
+    it.only('Confirmar que los enlaces se redirijan', () => {
         escenarios.stepNumber(1);
         escenarios.step('Navegar a la pagina Sweets');
         barraMenu.linknavegacion();
+
+        escenarios.stepNumber(2)
         escenarios.step('Confirmar que los enlaces de navegación redirijan correctamente');
         homePage.setMenu();
+    })
+
+    it.only('Navegar a la pagina incorrectamente', () => {
+        escenarios.stepNumber(1);
+        escenarios.step('Introducir una URL incorrecta y comprobar el manejo de errores');
+        barraMenu.linknavegacion();
+
     })
 })
 
